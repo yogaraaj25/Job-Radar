@@ -1,0 +1,9 @@
+[tool.pyright]
+include = ["app"]
+executionEnvironments = [
+  { root = "." }
+]
+
+[tool.ruff]
+select = ["E", "F", "I"]
+fix = true

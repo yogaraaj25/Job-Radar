@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+geoalchemy2
+alembic
+pydantic[email]
+pydantic-settings
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt==4.0.1
+python-multipart
+spacy
+websockets
+psycopg2-binary # for synchronous operations/alembic if needed

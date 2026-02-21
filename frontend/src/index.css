@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+.map-container {
+  height: calc(100vh - 4rem);
+  width: 100%;
+}
+
+/* User Location Marker Styles */
+.user-marker {
+  background: transparent;
+  border: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
